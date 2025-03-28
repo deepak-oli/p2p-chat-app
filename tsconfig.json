@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "ES2022", // Target ECMAScript version
+    "module": "ES2022", // Use ES modules
+    "moduleResolution": "node", // Resolve modules in Node.js style
+    "rootDir": "src", // Source files location
+    "outDir": "dist", // Output folder for compiled files
+    "strict": true, // Enable strict type checking
+    "esModuleInterop": true, // Allow default imports from CommonJS modules
+    "resolveJsonModule": true, // Support importing JSON files
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true, // Ensure file casing consistency
+    "noImplicitAny": true, // Disallow implicit 'any' types
+    "noUnusedLocals": true, // Report unused local variables
+    "noUnusedParameters": true, // Report unused function parameters
+    "noImplicitReturns": true, // Ensure functions return a value
+    "noFallthroughCasesInSwitch": true, // Disallow fallthrough cases in switch statements
+    "allowSyntheticDefaultImports": true, // Allow default imports even if module doesn't have one
+    "incremental": true, // Enable incremental compilation
+    "allowJs": false, // Disallow JavaScript files
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", "tests"]
+}
